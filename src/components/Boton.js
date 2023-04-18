@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Boton = () => {
+const Boton = ({click, setClick, nombre, metodo}) => {
   return (
-    <div>Boton</div>
+
+    <div>
+      <p>Numero de Clicks:{click}</p>
+      <button onClick={metodo}>{nombre}</button>
+    </div>
   )
 }
 

@@ -1,7 +1,19 @@
-import React from "react";
+import React, {useState, useEffect}from "react";
+
 
 const ListaPaciente = () => {
-  
+  const [data, setData] = useState([])
+
+  useEffect(() => {
+    fetch('http://localhost:5000/persona')
+      .then((response) => {
+        return response.json()
+      })
+      .then((data) => {
+        setData(data)
+      })
+  }, [])
+
   return (
     <table className="table container mt-3">
       <thead>
@@ -21,20 +33,21 @@ const ListaPaciente = () => {
         </tr>
       </thead>
       <tbody className="table-group-divider">
-        
-        <tr>
-          
-          <td >Dato1</td>
-          <td >Dato2</td>
-          <td >Dato3</td>
-          <td >Dato4</td>
-          <td >Dato5</td>
-          <td >Dato6</td>
-          <td >Dato7</td>
-          <td >Dato8</td>
-		<td>Editar Eliminar</td>
-        </tr>
-
+        {data.map(data => {
+          return (
+            <tr key ={data.id}>
+          <td>{data.id}</td>
+          <td >{data.name}</td>
+          <td >{data.lastname}</td>
+          <td >{data.curp}</td>
+          <td >{data.age}</td>
+          <td >{data.address}</td>
+          <td >{data.phone}</td>
+          <td >{data.email}</td>
+          <td>Editar Eliminar</td>
+          </tr>
+          );
+        })}
       </tbody>
     </table>
   );

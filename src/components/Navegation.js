@@ -37,6 +37,11 @@ const Navegation = () => {
                   Control de personal
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link " to='/doctor'>
+                  Control de Doctores
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

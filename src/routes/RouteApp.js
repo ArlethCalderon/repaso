@@ -4,6 +4,7 @@ import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Registrar from '../pages/Registrar'
 import ListaPaciente from '../pages/ListaPaciente'
+import ListaDoctores from '../pages/ListaDoctores'
 
 
 
@@ -14,6 +15,7 @@ const RouteApp = () => {
       <Route path= "/login" element={<Login/>}/>
       <Route path= "/registro" element={<Registrar/>}/>
       <Route path= "/pacientes" element={<ListaPaciente/>}/>
+      <Route path='/doctor' element={<ListaDoctores/>}/>
       </Routes>
   )
 }

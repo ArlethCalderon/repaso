@@ -11,6 +11,32 @@
       "height": 1.7,
       "weight": 1.7,
       "category": "paciente"
+    },
+    {
+      "id": 1682037659433,
+      "name": "pepe",
+      "lastname": "valdez",
+      "age": "25",
+      "curp": "VXCA021205MSRLLRA9",
+      "address": "calle fulana",
+      "phone": "6445125841",
+      "email": "pepe@gmail.com",
+      "height": "1",
+      "weight": "60",
+      "category": "paciente"
+    },
+    {
+      "id": 1682042174832,
+      "name": "arleth",
+      "lastname": "calderon",
+      "age": "20",
+      "curp": "VXCA021205MSRLLRA9",
+      "address": "la calle",
+      "phone": "655484521545",
+      "email": "arletvalle78@gmail.com",
+      "height": "153",
+      "weight": "53",
+      "category": "paciente"
     }
   ]
 }
